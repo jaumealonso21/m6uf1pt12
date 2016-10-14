@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pràctica 12</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>Nom: <input type="text" id="nom" />
+            <input type="button" id="boto" value="Enviar" 
+                   onclick="hora(document.getElementById('nom').value, 'recepBon');"/></div>
+        <div id="recepBon"></div>
+        <div>Data de naixement: <input type="text" id="dataNaix" value="dd/mm/aaaa" />
+            <input type="button" id="botoData" value="Enviar" 
+                   onclick="dataNaixement(document.getElementById('dataNaix').value, 'recepData');" /></div>
+        <div id="recepData"></div>
+        <div><input type="button" onclick="resolucio('resolucio');" value="Resolucio" /></div>
+        <div id="resolucio"></div>
+        <script src="funcions.js"></script>
+    </body>
+</html>
