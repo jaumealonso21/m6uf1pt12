@@ -75,6 +75,23 @@ function resolucio(resolucio) {
     return true;
 }
 
+function canvia(ent) {
+    resultado = "";
+    var enllac = [];
+    
+    if(ent === "Trist"){
+        resultado = "trist.css";
+    }else if (ent === "Content"){
+        resultado = "content.css";
+    }
+    
+    enllac = document.getElementsByTagName('link');
+    enllac[0].href= resultado;
+    
+    //console.log(resultado);
+    return true;
+}
+
 
 
 

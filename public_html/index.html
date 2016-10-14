@@ -3,6 +3,7 @@
     <head>
         <title>Pràctica 12</title>
         <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="" />
     </head>
     <body>
         <div>Nom: <input type="text" id="nom" />
@@ -15,9 +16,9 @@
         <div id="recepData"></div>
         <div><input type="button" onclick="resolucio('resolucio');" value="Resolucio" /></div>
         <div id="resolucio"></div>
-        <div>Estàs:<input type="radio" name="humor" value="trist" />
-        <input type="radio" name="humor" value="content" />
-        <input type="button" onclick="canvia(document.getElementsByName('radio').value);" value="Canvia!!!" /></div>
+        <div><input type="button" id="trist" value="Trist" onclick="canvia(document.getElementById('trist').value);" />
+        <input type="button" id="content" value="Content" onclick="canvia(document.getElementById('content').value);" /></div>
+        
         <script src="funcions.js"></script>
     </body>
 </html>
