@@ -76,3 +76,5 @@ function resolucio(resolucio) {
 }
 
 
+
+
